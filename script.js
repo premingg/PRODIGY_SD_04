@@ -1,5 +1,3 @@
-// Modularized, enhanced Sudoku Solver
-
 const boardSize = 9;
 const boardElement = document.getElementById('sudoku-board');
 const messageElement = document.getElementById('message');
