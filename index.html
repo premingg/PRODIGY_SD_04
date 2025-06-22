@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Sudoku Solver</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Sudoku Solver</h1>
-    <div id="sudoku-container">
-        <table id="sudoku-board"></table>
+    <div id="sudoku-container" aria-label="Sudoku board" tabindex="0">
+        <table id="sudoku-board" aria-label="Sudoku input grid"></table>
     </div>
     <div class="buttons">
-        <button onclick="solveSudoku()">Solve</button>
-        <button onclick="clearBoard()">Clear</button>
-        <button onclick="fillSample()">Sample Puzzle</button>
+        <button id="solve-btn">Solve</button>
+        <button id="clear-btn">Clear</button>
+        <button id="sample-btn">Sample Puzzle</button>
+        <button id="sample2-btn">Another Sample</button>
+        <button id="hint-btn">Hint</button>
+        <button id="step-btn">Step Mode</button>
+        <button id="save-btn">Save</button>
+        <button id="load-btn">Load</button>
+        <input type="file" id="file-input" style="display:none;" />
     </div>
-    <p id="message"></p>
+    <p id="message" aria-live="polite"></p>
     <footer>
-        <p>Sudoku Solver</p>
+        <p>Sudoku Solver &mdash; Accessible & Enhanced UI</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
 </body>
 </html>
